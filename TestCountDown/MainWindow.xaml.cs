@@ -62,8 +62,6 @@ namespace TestCountDown {
                     pbTime.Foreground = GetPercentageBrush(perLeft);
 
             pbTime.Value = perLeft *100;
-
-
         }
 
         private Brush GetPercentageBrush(double v) {
@@ -128,7 +126,7 @@ namespace TestCountDown {
             SetupSecondsForm(endTimer - startTimer);
 
             if (!tmr.IsEnabled) {
-                tmr.Interval = new TimeSpan(1000);
+                tmr.Interval = new TimeSpan(500);
                 tmr.Start();
             }
 
