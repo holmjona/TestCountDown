@@ -33,7 +33,7 @@ namespace TestCountDown {
             Tools.fillTimeDDLs(ddlStartHour, ddlStartMinutes, DateTime.Now);
             Tools.fillTimeDDLs(ddlEndHour, ddlEndMinutes, DateTime.Now.AddMinutes(50));
             initializingValues = false;
-
+            tmr.Interval = new TimeSpan(5000000);
 
             //btnBegin.Content = "Start Count Down";
 
